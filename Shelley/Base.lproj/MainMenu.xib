@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,20 +10,20 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application" customClass="NSApplication"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RequestBar" customModuleProvider="target">
             <connections>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="statusBarMenu" destination="Kmc-Ur-Bdv" id="aXd-eR-YX5"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="RequestBar" id="1Xt-HY-uBw">
+                <menuItem title="Shelley" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="RequestBar" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="Shelley" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About RequestBar" id="5kV-Vb-QxS">
+                            <menuItem title="About Shelley" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -37,7 +37,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide RequestBar" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide Shelley" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -55,7 +55,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit RequestBar" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit Shelley" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -668,7 +668,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="RequestBar Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="Shelley Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -677,16 +677,43 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="140" y="154"/>
         </menu>
-        <window title="RequestBar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-        </window>
+        <menu id="Kmc-Ur-Bdv">
+            <items>
+                <menuItem title="About Shelley" id="cV3-h8-5ab">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showAbout:" target="Voe-Tx-rLC" id="ZhD-12-uvV"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="View My Other Apps..." id="2bv-CE-sWJ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="otherApps:" target="Voe-Tx-rLC" id="5FV-KL-uT6"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="EHR-gR-UPy"/>
+                <menuItem title="Preferences..." keyEquivalent="," id="pUb-e7-ZVL">
+                    <connections>
+                        <action selector="showPrefs:" target="Voe-Tx-rLC" id="i7X-Ca-8Qm"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="vmW-ZV-NBX"/>
+                <menuItem title="Check for Updates..." id="PzN-qD-EWu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="Uxx-xn-Lbs"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="SPy-UH-Uvl"/>
+                <menuItem title="Quit Shelley" keyEquivalent="q" id="865-Sf-SP2">
+                    <connections>
+                        <action selector="quit:" target="Voe-Tx-rLC" id="RxH-0P-q7T"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-324" y="-97"/>
+        </menu>
     </objects>
 </document>

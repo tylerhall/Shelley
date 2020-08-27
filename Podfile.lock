@@ -1,0 +1,24 @@
+PODS:
+  - CocoaAsyncSocket (7.6.4)
+  - Criollo (0.5.5):
+    - CocoaAsyncSocket (~> 7.6)
+  - Sparkle (1.23.0)
+
+DEPENDENCIES:
+  - Criollo (~> 0.5)
+  - Sparkle
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaAsyncSocket
+    - Criollo
+    - Sparkle
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  Criollo: 617173837c296ca4248b0b058f36ce9b91e5c25b
+  Sparkle: 55b1a87ba69d56913375a281546b7c82dec95bb0
+
+PODFILE CHECKSUM: bc9d5270465959491452d93b0cf4a7fcfb0fa41c
+
+COCOAPODS: 1.9.1

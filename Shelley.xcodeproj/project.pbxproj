@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6512D3C24F727B800EB2AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D3B24F727B800EB2AB7 /* AppDelegate.swift */; };
+		C6512D3E24F727BA00EB2AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6512D3D24F727BA00EB2AB7 /* Assets.xcassets */; };
+		C6512D4124F727BA00EB2AB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6512D3F24F727BA00EB2AB7 /* MainMenu.xib */; };
+		C6512D4B24F727EC00EB2AB7 /* WelcomePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D4924F727EC00EB2AB7 /* WelcomePopover.swift */; };
+		C6512D4C24F727EC00EB2AB7 /* WelcomePopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6512D4A24F727EC00EB2AB7 /* WelcomePopover.xib */; };
+		C6512D4F24F727F700EB2AB7 /* AboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6512D4D24F727F700EB2AB7 /* AboutWindowController.xib */; };
+		C6512D5024F727F700EB2AB7 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D4E24F727F700EB2AB7 /* AboutWindowController.swift */; };
+		C6512D5324F727FE00EB2AB7 /* PrefsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D5124F727FE00EB2AB7 /* PrefsWindowController.swift */; };
+		C6512D5424F727FE00EB2AB7 /* PrefsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6512D5224F727FE00EB2AB7 /* PrefsWindowController.xib */; };
+		C6512D5624F7280C00EB2AB7 /* MenuBarStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D5524F7280C00EB2AB7 /* MenuBarStatusItem.swift */; };
+		C6512D5824F7284D00EB2AB7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D5724F7284D00EB2AB7 /* Extensions.swift */; };
+		C6512D5A24F72CD700EB2AB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D5924F72CD700EB2AB7 /* Constants.swift */; };
+		C6512D6424F736B500EB2AB7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6512D6324F736B500EB2AB7 /* Server.swift */; };
+		C65236DF24F7499C008A4577 /* TaskRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65236DE24F7499C008A4577 /* TaskRunner.swift */; };
+		C65236E124F74F6B008A4577 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C65236E024F74F6B008A4577 /* Defaults.plist */; };
+		F9B850C273B565E14F2B0B1B /* libPods-Shelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBA1B28D70E05972D29E051 /* libPods-Shelley.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6512D6124F72FA100EB2AB7 /* Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = Frameworks;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CBA1B28D70E05972D29E051 /* libPods-Shelley.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shelley.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6F69593073EA64FF080D8B /* Pods-RequestBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestBar.debug.xcconfig"; path = "Target Support Files/Pods-RequestBar/Pods-RequestBar.debug.xcconfig"; sourceTree = "<group>"; };
+		9B4470F070F997A74B879D74 /* Pods-RequestBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestBar.release.xcconfig"; path = "Target Support Files/Pods-RequestBar/Pods-RequestBar.release.xcconfig"; sourceTree = "<group>"; };
+		9FC372CFF153D8D3E7222F86 /* Pods-Shelley.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelley.release.xcconfig"; path = "Target Support Files/Pods-Shelley/Pods-Shelley.release.xcconfig"; sourceTree = "<group>"; };
+		B3EF497A753691E0BB27D6C8 /* Pods-Shelley.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelley.debug.xcconfig"; path = "Target Support Files/Pods-Shelley/Pods-Shelley.debug.xcconfig"; sourceTree = "<group>"; };
+		C6512D3824F727B800EB2AB7 /* Shelley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6512D3B24F727B800EB2AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6512D3D24F727BA00EB2AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6512D4024F727BA00EB2AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C6512D4224F727BA00EB2AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6512D4924F727EC00EB2AB7 /* WelcomePopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePopover.swift; sourceTree = "<group>"; };
+		C6512D4A24F727EC00EB2AB7 /* WelcomePopover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomePopover.xib; sourceTree = "<group>"; };
+		C6512D4D24F727F700EB2AB7 /* AboutWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindowController.xib; sourceTree = "<group>"; };
+		C6512D4E24F727F700EB2AB7 /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		C6512D5124F727FE00EB2AB7 /* PrefsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsWindowController.swift; sourceTree = "<group>"; };
+		C6512D5224F727FE00EB2AB7 /* PrefsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsWindowController.xib; sourceTree = "<group>"; };
+		C6512D5524F7280C00EB2AB7 /* MenuBarStatusItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarStatusItem.swift; sourceTree = "<group>"; };
+		C6512D5724F7284D00EB2AB7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6512D5924F72CD700EB2AB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6512D5D24F72F6800EB2AB7 /* Shelley-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shelley-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6512D6324F736B500EB2AB7 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		C65236DE24F7499C008A4577 /* TaskRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRunner.swift; sourceTree = "<group>"; };
+		C65236E024F74F6B008A4577 /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6512D3524F727B800EB2AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B850C273B565E14F2B0B1B /* libPods-Shelley.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2304FC7AB1D6F88283EF867C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D6F69593073EA64FF080D8B /* Pods-RequestBar.debug.xcconfig */,
+				9B4470F070F997A74B879D74 /* Pods-RequestBar.release.xcconfig */,
+				B3EF497A753691E0BB27D6C8 /* Pods-Shelley.debug.xcconfig */,
+				9FC372CFF153D8D3E7222F86 /* Pods-Shelley.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6610344A598B30E0E8BB6055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CBA1B28D70E05972D29E051 /* libPods-Shelley.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6512D2F24F727B800EB2AB7 = {
+			isa = PBXGroup;
+			children = (
+				C6512D3A24F727B800EB2AB7 /* Shelley */,
+				C6512D3924F727B800EB2AB7 /* Products */,
+				2304FC7AB1D6F88283EF867C /* Pods */,
+				6610344A598B30E0E8BB6055 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6512D3924F727B800EB2AB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6512D3824F727B800EB2AB7 /* Shelley.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6512D3A24F727B800EB2AB7 /* Shelley */ = {
+			isa = PBXGroup;
+			children = (
+				C6512D3B24F727B800EB2AB7 /* AppDelegate.swift */,
+				C6512D6324F736B500EB2AB7 /* Server.swift */,
+				C6512D4924F727EC00EB2AB7 /* WelcomePopover.swift */,
+				C6512D4A24F727EC00EB2AB7 /* WelcomePopover.xib */,
+				C6512D4E24F727F700EB2AB7 /* AboutWindowController.swift */,
+				C6512D4D24F727F700EB2AB7 /* AboutWindowController.xib */,
+				C6512D5124F727FE00EB2AB7 /* PrefsWindowController.swift */,
+				C6512D5224F727FE00EB2AB7 /* PrefsWindowController.xib */,
+				C6512D5524F7280C00EB2AB7 /* MenuBarStatusItem.swift */,
+				C6512D5724F7284D00EB2AB7 /* Extensions.swift */,
+				C6512D3D24F727BA00EB2AB7 /* Assets.xcassets */,
+				C6512D3F24F727BA00EB2AB7 /* MainMenu.xib */,
+				C6512D4224F727BA00EB2AB7 /* Info.plist */,
+				C6512D5924F72CD700EB2AB7 /* Constants.swift */,
+				C6512D5D24F72F6800EB2AB7 /* Shelley-Bridging-Header.h */,
+				C65236DE24F7499C008A4577 /* TaskRunner.swift */,
+				C65236E024F74F6B008A4577 /* Defaults.plist */,
+			);
+			path = Shelley;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6512D3724F727B800EB2AB7 /* Shelley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6512D4624F727BA00EB2AB7 /* Build configuration list for PBXNativeTarget "Shelley" */;
+			buildPhases = (
+				CBA8E01ECB1A010B359295BD /* [CP] Check Pods Manifest.lock */,
+				C6512D3424F727B800EB2AB7 /* Sources */,
+				C6512D3524F727B800EB2AB7 /* Frameworks */,
+				C6512D3624F727B800EB2AB7 /* Resources */,
+				C6512D6124F72FA100EB2AB7 /* Frameworks */,
+				3CA505867D691D2055FBBAE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shelley;
+			productName = RequestBar;
+			productReference = C6512D3824F727B800EB2AB7 /* Shelley.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6512D3024F727B800EB2AB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Tyler Hall";
+				TargetAttributes = {
+					C6512D3724F727B800EB2AB7 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+				};
+			};
+			buildConfigurationList = C6512D3324F727B800EB2AB7 /* Build configuration list for PBXProject "Shelley" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6512D2F24F727B800EB2AB7;
+			productRefGroup = C6512D3924F727B800EB2AB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6512D3724F727B800EB2AB7 /* Shelley */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6512D3624F727B800EB2AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6512D4C24F727EC00EB2AB7 /* WelcomePopover.xib in Resources */,
+				C6512D4F24F727F700EB2AB7 /* AboutWindowController.xib in Resources */,
+				C65236E124F74F6B008A4577 /* Defaults.plist in Resources */,
+				C6512D5424F727FE00EB2AB7 /* PrefsWindowController.xib in Resources */,
+				C6512D3E24F727BA00EB2AB7 /* Assets.xcassets in Resources */,
+				C6512D4124F727BA00EB2AB7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CA505867D691D2055FBBAE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shelley/Pods-Shelley-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shelley/Pods-Shelley-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shelley/Pods-Shelley-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA8E01ECB1A010B359295BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shelley-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6512D3424F727B800EB2AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6512D5624F7280C00EB2AB7 /* MenuBarStatusItem.swift in Sources */,
+				C6512D5824F7284D00EB2AB7 /* Extensions.swift in Sources */,
+				C65236DF24F7499C008A4577 /* TaskRunner.swift in Sources */,
+				C6512D5024F727F700EB2AB7 /* AboutWindowController.swift in Sources */,
+				C6512D4B24F727EC00EB2AB7 /* WelcomePopover.swift in Sources */,
+				C6512D5A24F72CD700EB2AB7 /* Constants.swift in Sources */,
+				C6512D5324F727FE00EB2AB7 /* PrefsWindowController.swift in Sources */,
+				C6512D6424F736B500EB2AB7 /* Server.swift in Sources */,
+				C6512D3C24F727B800EB2AB7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6512D3F24F727BA00EB2AB7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6512D4024F727BA00EB2AB7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6512D4424F727BA00EB2AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6512D4524F727BA00EB2AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C6512D4724F727BA00EB2AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EF497A753691E0BB27D6C8 /* Pods-Shelley.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3A6K89K388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Shelley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tyler.Shelley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shelley/Shelley-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C6512D4824F727BA00EB2AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC372CFF153D8D3E7222F86 /* Pods-Shelley.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3A6K89K388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Shelley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tyler.Shelley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shelley/Shelley-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6512D3324F727B800EB2AB7 /* Build configuration list for PBXProject "Shelley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6512D4424F727BA00EB2AB7 /* Debug */,
+				C6512D4524F727BA00EB2AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6512D4624F727BA00EB2AB7 /* Build configuration list for PBXNativeTarget "Shelley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6512D4724F727BA00EB2AB7 /* Debug */,
+				C6512D4824F727BA00EB2AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6512D3024F727B800EB2AB7 /* Project object */;
+}
