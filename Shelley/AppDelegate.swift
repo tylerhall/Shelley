@@ -32,6 +32,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         Server.shared.start()
+
+        SUUpdater.shared()?.checkForUpdatesInBackground()
     }
 
     func registerDefaults() {
